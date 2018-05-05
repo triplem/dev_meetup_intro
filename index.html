@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>Who am I?</section>
+					<section data-transition="slide">
+						Virtual<br/>
+						github/gitter: triplem<br/>
+						<img src="./profile.png" height="400px"/>
+					</section>
+					<section data-transition="slide">
+						Real Life<br/>
+						Markus M. May<br/>
+						<img src="./profil_bart.jpg" height="400px"/>
+					</section>
+					<section>
+						Type 1 since 1979<br/>
+						Zoeliac<br/>
+						Twice Daily, MDI, Insulin Pump (since March 2018)<br/>
+						*Lente, *Tard, Actrapid, Protaphane, Lantus, Levemir, Humalog<br/>
+						Involved in several OSS Projects<br/>
+					</section>
+					<section>
+						Things that interest and influenced me the most<br/>
+						Diabetes<br/>
+						IT<br/>
+						My Wife<br/>
+						CDs (large Collection)<br/>
+					</section>
+				</section>
+				<section>
+					<section>How did I get involved in the Open Source type 1 community</section>
+					<section>Diabetes + IT</section>
+					<section>
+						looked for an "automated" system<br/>
+						stumbled across Nightscout and then OpenAPS<br/>
+						searched for pumps and found "AndroidAPS"/Dana R/Dexcom<br/>
+					</section>
+					<section>
+						first commit to AAPS in early Jan<br/>
+						build file, Unit tests, Food Plugin "improvements"<br/>
+						several minor commits since then
+					</section>
+					<section>12.1 - A message from Adrian for a small meetup in Frankfurt looking out for a glutenfree place...</section>
+					<section>
+						<img src="./adrian_dana.jpg" height="400px"/>
+					</section>
+					<section>
+						Met some major players of the community the first time and was "on fire"
+					</section>
+				</section>
+				<section>
+					<section>What should we, as a group, work on for the next year</section>
+					<section>
+						Reduce Complexity for the user as well as for (us) developers
+					</section>
+					<section>
+						Talk to people, reach out to widen the community, keep the community alive (which does not seem to be a problem right now) ...<br/>
+						Rule the "World"
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				transition: Reveal.getQueryHash().transition || 'default',
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
